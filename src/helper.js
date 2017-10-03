@@ -27,13 +27,21 @@ export default class DistrictRepository {
     if (!searchInput){
       return undefined;
     }
-    const thing = Object.keys(this.data);
-    const foundIt = thing.find( (key) => {
+    const searchResult = Object.keys(this.data).find( (key) => {
       return key === searchInput.toUpperCase();
     });
-    if (!foundIt){
+    if (!searchResult){
       return undefined;
     }
-    return this.data[foundIt];
+    return this.data[searchResult];
+  }
+
+  findAllMatches(searchInput) {
+    if (!searchInput) {
+      return Object.keys(this.data);
+    }
+    return Object.keys(this.data).filter( (key) => {
+      return key.includes(searchInput.toUpperCase());
+    });
   }
 }
