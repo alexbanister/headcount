@@ -17,7 +17,7 @@ export default class DistrictRepository {
         data = 0;
       }
       if(!accu[loc].data[record.TimeFrame]) {
-        accu[loc].data[record.TimeFrame] = Math.round(data * 1000)/1000;
+        accu[loc].data[record.TimeFrame] = this.rounded(data);
       }
       return accu
     }, {});
@@ -36,6 +36,10 @@ export default class DistrictRepository {
     return this.data[searchResult];
   }
 
+  rounded(num){
+    return Math.round(num * 1000) / 1000;
+  }
+
   findAllMatches(searchInput) {
     if (!searchInput) {
       return Object.keys(this.data);
@@ -43,5 +47,32 @@ export default class DistrictRepository {
     return Object.keys(this.data).filter( (key) => {
       return key.includes(searchInput.toUpperCase());
     });
+  }
+
+  findAverage(district) {
+    const dataPoints = this.findByName(district).data;
+    const years = Object.keys(dataPoints);
+    const average = years.reduce( (accum, year) => {
+      accum += dataPoints[year];
+      return accum
+    }, 0);
+    return this.rounded(average / years.length);
+  }
+
+  compareDistrictAverages(district1, district2) {
+    district1 = district1.toUpperCase();
+    district2 = district2.toUpperCase();
+    const district1Average = this.findAverage(district1);
+    const district2Average = this.findAverage(district2);
+    let compared = district1Average / district2Average;
+    if (district1Average > district2Average) {
+      compared = district2Average / district1Average
+    }
+    return {
+      [district1]: district1Average,
+      [district2]: district2Average,
+      compared: this.rounded(compared)
+    }
+
   }
 }
