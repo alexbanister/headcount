@@ -26,4 +26,22 @@ export default class DistrictRepository {
     }, {})
   }
 
+  findByName(searchInput) {
+    if (searchInput === ''){
+      return 'undefined';
+    }
+
+    const keys = Object.keys(this.data);
+
+    const findObject = keys.filter( (key) => {
+      if(key === searchInput) {
+        const searchResult = Object.assign({}, { location: key }, { data: this.data[key] });
+        // console.log('searchResult', searchResult);
+        return searchResult;
+      }
+    })
+
+    console.log(findObject);
+  }
+
 }
