@@ -5,56 +5,35 @@ export default class DistrictRepository {
 
   parseData(data) {
     return data.reduce( (accu, record) => {
-      if(!accu[record.Location]) {
-        accu[record.Location] = []
-      }
-      const recordKeys = Object.keys(record);
-      const strippedKeys = recordKeys.filter( (key) => {
-        return key !== 'Location';
-      });
-
-      const newRecord = strippedKeys.reduce( (accu, key) => {
-        if(!accu[key]) {
-          accu[key] = ''
+      const loc = record.Location.toUpperCase();
+      if(!accu[loc]) {
+        accu[loc] = {
+          location: loc,
+          data: {}
         }
-        accu[key] = record[key];
-        return accu
-      }, {});
-
-      accu[record.Location].push(newRecord);
+      }
+      let data = record.Data;
+      if (isNaN(record.Data)) {
+        data = 0;
+      }
+      if(!accu[loc].data[record.TimeFrame]) {
+        accu[loc].data[record.TimeFrame] = Math.round(data * 1000)/1000;
+      }
       return accu
-    }, {})
+    }, {});
   }
 
   findByName(searchInput) {
-    let returnValue
-
     if (!searchInput){
       return undefined;
     }
-
-    const casedInput = searchInput.toUpperCase()
-    const keys = Object.keys(this.data);
-
-    const findObject = keys.forEach( (key) => {
-      let upperCasedKey = key.toUpperCase()
-      if (upperCasedKey === casedInput) {
-         returnValue = upperCasedKey;
-      } else {
-
-      };
-    })
-
-    // this.data.forEach( (district) => {
-    //   if(district.location === casedInput) {
-    //     console.log(district);
-    //     returnValue = district
-    //   }
-
-      // console.log(returnValue);
-    const searchResult = Object.assign({}, { location: returnValue }, { data: this.data[returnValue] });
-
-      return searchResult
+    const thing = Object.keys(this.data);
+    const foundIt = thing.find( (key) => {
+      return key === searchInput.toUpperCase();
+    });
+    if (!foundIt){
+      return undefined;
     }
-
+    return this.data[foundIt];
+  }
 }
