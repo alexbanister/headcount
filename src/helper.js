@@ -27,21 +27,34 @@ export default class DistrictRepository {
   }
 
   findByName(searchInput) {
-    if (searchInput === ''){
-      return 'undefined';
+    let returnValue
+
+    if (!searchInput){
+      return undefined;
     }
 
+    const casedInput = searchInput.toUpperCase()
     const keys = Object.keys(this.data);
 
-    const findObject = keys.filter( (key) => {
-      if(key === searchInput) {
-        const searchResult = Object.assign({}, { location: key }, { data: this.data[key] });
-        // console.log('searchResult', searchResult);
-        return searchResult;
-      }
+    const findObject = keys.forEach( (key) => {
+      let upperCasedKey = key.toUpperCase()
+      if (upperCasedKey === casedInput) {
+         returnValue = upperCasedKey;
+      } else {
+
+      };
     })
 
-    console.log(findObject);
-  }
+    // this.data.forEach( (district) => {
+    //   if(district.location === casedInput) {
+    //     console.log(district);
+    //     returnValue = district
+    //   }
+
+      // console.log(returnValue);
+    const searchResult = Object.assign({}, { location: returnValue }, { data: this.data[returnValue] });
+
+      return searchResult
+    }
 
 }
