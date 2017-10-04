@@ -14,3 +14,9 @@
 
 .data-line {
   margin: 0; }
+
+.above-fifty {
+  color: green; }
+
+.below-fifty {
+  color: red; }
