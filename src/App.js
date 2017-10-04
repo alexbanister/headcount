@@ -45,8 +45,21 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      districts: new DistrictRepository(kinderData)
+      districts: new DistrictRepository(kinderData),
+      displayDistricts: []
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      displayDistricts: this.state.districts.findAllMatches()
+    });
+  }
+
+  updateSearchDistricts(search) {
+    this.setState({
+      displayDistricts: this.state.districts.findAllMatches(search)
+    });
   }
 
   changeDataSet(dataSet) {
@@ -58,11 +71,14 @@ class App extends Component {
     return (
       <div>
         <Controls
+          searchDistricts={this.updateSearchDistricts.bind(this)}
           fileList={Object.keys(dataFiles)}
           changeData={this.changeDataSet.bind(this)}
         />
         {/* <Compare /> */}
-        <CardContainer districtData={this.state.districts} />
+        <CardContainer
+          districtData={this.state.districts}
+          districtList={this.state.displayDistricts} />
       </div>
     );
   }

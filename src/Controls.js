@@ -5,13 +5,19 @@ class Controls extends Component {
   constructor() {
     super();
     this.state = {
-      dataSet: ''
+      dataSet: '',
+      searchValue: ''
     };
   }
 
   handleChange(event) {
     this.setState({dataSet: event.target.value});
     this.props.changeData(event.target.value);
+  }
+
+  handleSearch (event) {
+    this.setState({searchValue: event.target.value});
+    this.props.searchDistricts(event.target.value);
   }
 
   render() {
@@ -32,7 +38,9 @@ class Controls extends Component {
           <option value=''>Select a Dataset</option>
           {fileListDropdown}
         </select>
-        <input />
+        <input
+          value={this.state.searchValue}
+          onChange={this.handleSearch.bind(this)} />
       </div>
     );
   }
