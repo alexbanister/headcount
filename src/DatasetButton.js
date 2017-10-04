@@ -8,4 +8,8 @@ const DatasetButton = ( {dataSet} ) => {
   );
 };
 
+DatasetButton.propTypes = {
+  dataSet: React.PropTypes.string
+};
+
 export default DatasetButton;

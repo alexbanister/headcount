@@ -14,4 +14,10 @@ const CardContainer = ( {districtData, districtList} ) => {
   );
 };
 
+CardContainer.propTypes = {
+  districtData: React.PropTypes.object,
+  districtList: React.PropTypes.array
+};
+
+
 export default CardContainer;

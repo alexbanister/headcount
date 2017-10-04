@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = ( {district} ) => {
   const districtKeys = Object.keys(district.data);
@@ -16,6 +17,10 @@ const Card = ( {district} ) => {
       <div className="card-data">{yearlyData}</div>
     </div>
   );
+};
+
+Card.propTypes = {
+  district: React.PropTypes.object
 };
 
 export default Card;
