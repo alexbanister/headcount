@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DatasetButton from './DatasetButton';
 
 class Controls extends Component {
   constructor() {
@@ -16,21 +17,22 @@ class Controls extends Component {
   render() {
     const fileListDropdown = this.props.fileList.map( (fileName) => {
       return (
-        <option value={fileName}>
-          {fileName}
-        </option>
+        <DatasetButton
+          key={fileName}
+          dataSet={fileName} />
       );
     });
     return (
-      <div>
+      <div className='header'>
         <h1>Welcome To Headcount 2.0</h1>
         <select
           value={this.state.dataSet}
           onChange={this.handleChange.bind(this)}>
 
-          <option value=''></option>
+          <option value=''>Select a Dataset</option>
           {fileListDropdown}
         </select>
+        <input />
       </div>
     );
   }
