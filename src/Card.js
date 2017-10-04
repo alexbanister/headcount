@@ -20,7 +20,10 @@ const Card = ( {district} ) => {
 };
 
 Card.propTypes = {
-  district: React.PropTypes.object
+  district: React.PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ])
 };
 
 export default Card;

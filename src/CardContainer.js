@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from './Card';
+import PropTypes from 'prop-types';
+
 // import DistrictRepository from './helper.js';
 
 const CardContainer = ( {districtData, districtList} ) => {
@@ -15,8 +17,8 @@ const CardContainer = ( {districtData, districtList} ) => {
 };
 
 CardContainer.propTypes = {
-  districtData: React.PropTypes.object,
-  districtList: React.PropTypes.array
+  districtData: React.PropTypes.objectOf(PropTypes.object),
+  districtList: React.PropTypes.arrayOf(PropTypes.string)
 };
 
 
