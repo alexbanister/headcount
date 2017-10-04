@@ -3,23 +3,23 @@ export default class DistrictRepository {
     this.data = this.parseData(data);
   }
 
-  parseData(data) {
-    return data.reduce( (accu, record) => {
+  parseData(rawData) {
+    return rawData.reduce( (accu, record) => {
       const loc = record.Location.toUpperCase();
-      if(!accu[loc]) {
+      if (!accu[loc]) {
         accu[loc] = {
           location: loc,
           data: {}
-        }
+        };
       }
-      let data = record.Data;
+      let dataPoint = record.Data;
       if (isNaN(record.Data)) {
-        data = 0;
+        dataPoint = 0;
       }
-      if(!accu[loc].data[record.TimeFrame]) {
-        accu[loc].data[record.TimeFrame] = this.rounded(data);
+      if (!accu[loc].data[record.TimeFrame]) {
+        accu[loc].data[record.TimeFrame] = this.rounded(dataPoint);
       }
-      return accu
+      return accu;
     }, {});
   }
 
@@ -54,7 +54,7 @@ export default class DistrictRepository {
     const years = Object.keys(dataPoints);
     const average = years.reduce( (accum, year) => {
       accum += dataPoints[year];
-      return accum
+      return accum;
     }, 0);
     return this.rounded(average / years.length);
   }
@@ -66,13 +66,12 @@ export default class DistrictRepository {
     const district2Average = this.findAverage(district2);
     let compared = district1Average / district2Average;
     if (district1Average > district2Average) {
-      compared = district2Average / district1Average
+      compared = district2Average / district1Average;
     }
     return {
       [district1]: district1Average,
       [district2]: district2Average,
       compared: this.rounded(compared)
-    }
-
+    };
   }
 }

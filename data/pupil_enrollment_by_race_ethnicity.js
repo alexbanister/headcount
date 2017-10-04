@@ -1,5 +1,5 @@
 module.exports =
-  [
+[
   {
     "Location": "Colorado",
     "Race": "American Indian Students",
@@ -156646,4 +156646,4 @@ module.exports =
     "DataFormat": "Number",
     "Data": 824
   }
-]
+];

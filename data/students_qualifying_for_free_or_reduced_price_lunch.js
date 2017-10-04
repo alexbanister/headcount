@@ -1,5 +1,5 @@
 module.exports =
-  [
+[
   {
     "Location": "Colorado",
     "Poverty Level": "Eligible for Reduced Price Lunch",
@@ -114030,4 +114030,4 @@ module.exports =
     "DataFormat": "Percent",
     "Data": 0.58859
   }
-]
+];
