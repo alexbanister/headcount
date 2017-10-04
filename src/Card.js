@@ -3,11 +3,19 @@ import React from 'react';
 const Card = ( {district} ) => {
   const districtKeys = Object.keys(district.data);
   const yearlyData = districtKeys.map( (districtKey) => {
-    return (
-      <h3 className="data-line">
-        {districtKey}: {district.data[districtKey]}
-      </h3>
-    );
+    if (district.data[districtKey] > .5) {
+      return (
+        <h3 className="data-line above-fifty">
+          {districtKey}: {district.data[districtKey]}
+        </h3>
+      );
+    } else {
+      return (
+        <h3 className="data-line below-fifty">
+          {districtKey}: {district.data[districtKey]}
+        </h3>
+      );
+    }
   });
   return (
     <div className="card">
