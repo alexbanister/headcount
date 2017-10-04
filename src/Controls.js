@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatasetButton from './DatasetButton';
+import PropTypes from 'prop-types';
 
 class Controls extends Component {
   constructor() {
@@ -45,5 +46,11 @@ class Controls extends Component {
     );
   }
 }
+
+Controls.propTypes = {
+  searchDistricts: React.PropTypes.func,
+  fileList: React.PropTypes.arrayOf(PropTypes.string),
+  changeData: React.PropTypes.func
+};
 
 export default Controls;

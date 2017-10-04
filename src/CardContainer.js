@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 
 const CardContainer = ( {districtData, districtList} ) => {
   const allCards = districtList.map( (place) => {
-    return <Card district={districtData.findByName(place)} />;
+    return <Card
+      district={districtData.findByName(place)}
+      key={place}/>;
   });
 
   return (

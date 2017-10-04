@@ -6,7 +6,8 @@ const Card = ( {district} ) => {
   const yearlyData = districtKeys.map( (districtKey) => {
     let dataValue = district.data[districtKey] > .5 ? "above-fifty" : "below-fifty";
     return (
-      <h3 className={`data-line ${dataValue}`}>
+      <h3 className={`data-line ${dataValue}`}
+          key={`${district.location} ${districtKey} - ${district.data[districtKey]}`}>
         {districtKey}: {district.data[districtKey]}
       </h3>
     );
