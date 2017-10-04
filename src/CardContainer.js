@@ -1,15 +1,15 @@
 import React from 'react';
 import Card from './Card';
-import DistrictRepository from './helper.js';
+// import DistrictRepository from './helper.js';
 
 const CardContainer = ( {districtData} ) => {
-  const allCards = districtData.findAllMatches().map( (district) => {
-    return <Card location={districtData.findByName(district)}
+  const allCards = districtData.findAllMatches().map( (place) => {
+    return <Card district={districtData.findByName(place)}
     />
   })
 
   return (
-    <div>
+    <div className="card-container">
       {allCards}
     </div>
   )
