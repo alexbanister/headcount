@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardContainer from './CardContainer';
 import Controls from './Controls';
+import Compare from './Compare';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 import DistrictRepository from './helper.js';
 
@@ -46,13 +47,24 @@ class App extends Component {
     super();
     this.state = {
       districts: new DistrictRepository(kinderData),
-      displayDistricts: []
+      displayDistricts: [],
+      compareCard: true,
+      firstDistrict: '',
+      secondDistrict: ''
     };
   }
 
   componentDidMount() {
     this.setState({
       displayDistricts: this.state.districts.findAllMatches()
+    });
+  }
+
+  setComparePosition (district) {
+    const pos = this.state.compareCard ? 'firstDistrict' : 'secondDistrict';
+    this.setState({
+      [pos]: district,
+      compareCard: !this.state.compareCard
     });
   }
 
@@ -67,6 +79,38 @@ class App extends Component {
     this.setState({districts: dataLoad});
   }
 
+  buildCompare () {
+    let CompareInfo = {};
+    if (this.state.firstDistrict) {
+      CompareInfo += {
+        firstDistrict: {
+          title:
+            this.state.firstDistrict,
+          average:
+            this.state.districts.findAverage(this.state.firstDistrict),
+          dataObj:
+            this.state.districts.findByName(this.state.firstDistrict)
+        }
+      };
+    }
+    if (this.state.secondDistrict) {
+      CompareInfo += {
+        secondDistrict: {
+          title:
+            this.state.secondDistrict,
+          average:
+            this.state.districts.findAverage(this.state.secondDistrict),
+          dataObj:
+            this.state.districts.findByName(this.state.secondDistrict)
+        },
+        difference:
+          this.state.districts.compareDistrictAverages(
+            this.state.firstDistrict, this.state.secondDistrict)
+      };
+    }
+    return CompareInfo;
+  }
+
   render() {
     return (
       <div>
@@ -75,7 +119,9 @@ class App extends Component {
           fileList={Object.keys(dataFiles)}
           changeData={this.changeDataSet.bind(this)}
         />
-        {/* <Compare /> */}
+        <Compare
+          CompareInfo={this.buildCompare()}
+        />
         <CardContainer
           districtData={this.state.districts}
           districtList={this.state.displayDistricts} />
