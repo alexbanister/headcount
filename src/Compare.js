@@ -1,19 +1,30 @@
 import React from 'react';
 import CompareCard from './CompareCard';
+import Card from './Card';
 // import DistrictRepository from './helper.js';
 
-const Compare = ( {CompareInfo} ) => {
+const Compare = ( {compareInfo} ) => {
   let compareCard;
-  if (CompareInfo.firstDistrict === 'undefined' &&
-      CompareInfo.secondDistrict !== 'undefined') {
-    // compareCard = <CompareCard
-    //   CompareInfo={CompareInfo}
-    // />;
-    console.log(CompareInfo);
+  let firstCard;
+  let secondCard;
+  if (compareInfo.firstDistrict) {
+    firstCard = <Card
+      district={compareInfo.firstDistrict.data}
+      key={`compare-${compareInfo.firstDistrict.title}`}/>
+  }
+  if (compareInfo.firstDistrict && compareInfo.secondDistrict) {
+    compareCard = <CompareCard
+      compareInfo={compareInfo}
+    />;
+    secondCard = <Card
+      district={compareInfo.secondDistrict.data}
+      key={`compare-${compareInfo.secondDistrict.title}`}/>
   }
   return (
-    <div>
+    <div className='compare-container'>
+      {firstCard}
       {compareCard}
+      {secondCard}
     </div>
   );
 };

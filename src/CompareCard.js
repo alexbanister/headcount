@@ -1,13 +1,13 @@
 import React from 'react';
 
-const CompareCard = ( {CompareInfo} ) => {
+const CompareCard = ( {compareInfo} ) => {
   return (
     <div className="card">
-      <h2 className="district-name">{CompareInfo.firstDistrict.title}</h2>
-      <div className="card-data">{CompareInfo.firstDistrict.average}</div>
-      <h1>{CompareInfo.difference}</h1>
-      <div className="card-data">{CompareInfo.secondDistrict.average}</div>
-      <h2 className="district-name">{CompareInfo.secondDistrict.title}</h2>
+      <h2 className="district-name">{compareInfo.firstDistrict.title}</h2>
+      <div className="card-data">{compareInfo.firstDistrict.average}</div>
+      <h1>{compareInfo.difference.compared}</h1>
+      <div className="card-data">{compareInfo.secondDistrict.average}</div>
+      <h2 className="district-name">{compareInfo.secondDistrict.title}</h2>
     </div>
   );
 };
