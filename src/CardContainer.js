@@ -4,9 +4,15 @@ import PropTypes from 'prop-types';
 
 // import DistrictRepository from './helper.js';
 
-const CardContainer = ( {districtData, districtList} ) => {
+const CardContainer = ( {districtData, districtList, setComparePosition, firstDistrict, secondDistrict} ) => {
   const allCards = districtList.map( (place) => {
+    let selectedClass = '';
+    if (place === firstDistrict || place === secondDistrict) {
+      selectedClass = 'selected';
+    }
     return <Card
+      selected={selectedClass}
+      setComparePosition={setComparePosition}
       district={districtData.findByName(place)}
       key={place}/>;
   });

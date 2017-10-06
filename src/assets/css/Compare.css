@@ -1,0 +1,8 @@
+.compare-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .compare-container .card-data, .compare-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }

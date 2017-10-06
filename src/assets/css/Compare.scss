@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.compare-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card-data, h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

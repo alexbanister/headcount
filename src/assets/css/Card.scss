@@ -12,6 +12,11 @@
   overflow: hidden;
 }
 
+.selected {
+  border: 1px solid green;
+  box-shadow: 0 0 25px green;
+}
+
 .district-name {
   font-size: 1.2em;
   // border-radius: 10px;
