@@ -3,12 +3,14 @@ import CompareCard from './CompareCard';
 import Card from './Card';
 // import DistrictRepository from './helper.js';
 
-const Compare = ( {compareInfo} ) => {
+const Compare = ( {compareInfo, removeCompare} ) => {
   let compareCard;
   let firstCard;
   let secondCard;
   if (compareInfo.firstDistrict) {
     firstCard = <Card
+      setComparePosition={() => removeCompare(1)}
+      selected='compare-card'
       district={compareInfo.firstDistrict.data}
       key={`compare-${compareInfo.firstDistrict.title}`}/>
   }
@@ -17,6 +19,8 @@ const Compare = ( {compareInfo} ) => {
       compareInfo={compareInfo}
     />;
     secondCard = <Card
+      setComparePosition={() => removeCompare(2)}
+      selected='compare-card'
       district={compareInfo.secondDistrict.data}
       key={`compare-${compareInfo.secondDistrict.title}`}/>
   }
