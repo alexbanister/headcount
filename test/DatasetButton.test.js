@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import Controls from '../src/Controls';
+import DatasetButton from '../src/DatasetButton';
 import DistrictRepository from '../src/helper.js';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 
-describe('Controls', () => {
+describe('DatasetButton', () => {
   const district = new DistrictRepository(kinderData);
 
   it('should create an instance of a card container', () => {
-    const mockFunc = jest.fn();
-    const wrapper = shallow(<Controls
-      searchDistricts={mockFunc}
-      fileList={Object.keys(district)}
-      changeData={mockFunc}
+    const wrapper = shallow(<DatasetButton
+      key={district.data.COLORADO.location}
+      dataSet={district.data.COLORADO.location}
     />);
 
     expect(wrapper).toMatchSnapshot();
