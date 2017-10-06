@@ -10,12 +10,13 @@ describe('Card', () => {
 
   it('should create an instance of a card', () => {
 
-    const wrapper = shallow(<Card selected={district.data.COLORADO}
-                                  setComparePosition={0}
-                                  district={district.data.COLORADO}
-                                  key={district.data.COLORADO.location}
-                                />);
+    const wrapper = shallow(<Card
+      selected={district.data.COLORADO}
+      setComparePosition={0}
+      district={district.data.COLORADO}
+      key={district.data.COLORADO.location}
+    />);
 
-    expect(wrapper.find('.card').length).toEqual(1);
+    expect(wrapper).toMatchSnapshot();
   });
 });

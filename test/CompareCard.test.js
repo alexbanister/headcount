@@ -22,6 +22,6 @@ describe('CompareCard', () => {
 
     const wrapper = shallow(<CompareCard compareInfo={dummyCompare}/>);
 
-    expect(wrapper.find('.card').length).toEqual(1);
+    expect(wrapper).toMatchSnapshot();
   });
 });

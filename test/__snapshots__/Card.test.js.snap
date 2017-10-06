@@ -1,0 +1,882 @@
+exports[`Card should create an instance of a card 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    district={
+        Object {
+            "data": Object {
+              "2004": 0.24,
+              "2005": 0.278,
+              "2006": 0.337,
+              "2007": 0.395,
+              "2008": 0.536,
+              "2009": 0.598,
+              "2010": 0.64,
+              "2011": 0.672,
+              "2012": 0.695,
+              "2013": 0.703,
+              "2014": 0.741,
+            },
+            "location": "COLORADO",
+          }
+    }
+    selected={
+        Object {
+            "data": Object {
+              "2004": 0.24,
+              "2005": 0.278,
+              "2006": 0.337,
+              "2007": 0.395,
+              "2008": 0.536,
+              "2009": 0.598,
+              "2010": 0.64,
+              "2011": 0.672,
+              "2012": 0.695,
+              "2013": 0.703,
+              "2014": 0.741,
+            },
+            "location": "COLORADO",
+          }
+    }
+    setComparePosition={0} />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="district-name">
+          COLORADO
+</h2>,
+        <div
+          className="card-data">
+          <h3
+                    className="data-line below-fifty">
+                    2004
+                    : 
+                    0.24
+          </h3>
+          <h3
+                    className="data-line below-fifty">
+                    2005
+                    : 
+                    0.278
+          </h3>
+          <h3
+                    className="data-line below-fifty">
+                    2006
+                    : 
+                    0.337
+          </h3>
+          <h3
+                    className="data-line below-fifty">
+                    2007
+                    : 
+                    0.395
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2008
+                    : 
+                    0.536
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2009
+                    : 
+                    0.598
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2010
+                    : 
+                    0.64
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2011
+                    : 
+                    0.672
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2012
+                    : 
+                    0.695
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2013
+                    : 
+                    0.703
+          </h3>
+          <h3
+                    className="data-line above-fifty">
+                    2014
+                    : 
+                    0.741
+          </h3>
+</div>,
+      ],
+      "className": "card [object Object]",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "COLORADO",
+          "className": "district-name",
+        },
+        "ref": null,
+        "rendered": "COLORADO",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="data-line below-fifty">
+              2004
+              : 
+              0.24
+</h3>,
+            <h3
+              className="data-line below-fifty">
+              2005
+              : 
+              0.278
+</h3>,
+            <h3
+              className="data-line below-fifty">
+              2006
+              : 
+              0.337
+</h3>,
+            <h3
+              className="data-line below-fifty">
+              2007
+              : 
+              0.395
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2008
+              : 
+              0.536
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2009
+              : 
+              0.598
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2010
+              : 
+              0.64
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2011
+              : 
+              0.672
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2012
+              : 
+              0.695
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2013
+              : 
+              0.703
+</h3>,
+            <h3
+              className="data-line above-fifty">
+              2014
+              : 
+              0.741
+</h3>,
+          ],
+          "className": "card-data",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "COLORADO 2004 -
+        0.24",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2004",
+                ": ",
+                0.24,
+              ],
+              "className": "data-line below-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2004",
+              ": ",
+              0.24,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2005 -
+        0.278",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2005",
+                ": ",
+                0.278,
+              ],
+              "className": "data-line below-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2005",
+              ": ",
+              0.278,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2006 -
+        0.337",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2006",
+                ": ",
+                0.337,
+              ],
+              "className": "data-line below-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2006",
+              ": ",
+              0.337,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2007 -
+        0.395",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2007",
+                ": ",
+                0.395,
+              ],
+              "className": "data-line below-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2007",
+              ": ",
+              0.395,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2008 -
+        0.536",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2008",
+                ": ",
+                0.536,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2008",
+              ": ",
+              0.536,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2009 -
+        0.598",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2009",
+                ": ",
+                0.598,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2009",
+              ": ",
+              0.598,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2010 -
+        0.64",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2010",
+                ": ",
+                0.64,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2010",
+              ": ",
+              0.64,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2011 -
+        0.672",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2011",
+                ": ",
+                0.672,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2011",
+              ": ",
+              0.672,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2012 -
+        0.695",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2012",
+                ": ",
+                0.695,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2012",
+              ": ",
+              0.695,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2013 -
+        0.703",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2013",
+                ": ",
+                0.703,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2013",
+              ": ",
+              0.703,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "COLORADO 2014 -
+        0.741",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2014",
+                ": ",
+                0.741,
+              ],
+              "className": "data-line above-fifty",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2014",
+              ": ",
+              0.741,
+            ],
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="district-name">
+            COLORADO
+</h2>,
+          <div
+            className="card-data">
+            <h3
+                        className="data-line below-fifty">
+                        2004
+                        : 
+                        0.24
+            </h3>
+            <h3
+                        className="data-line below-fifty">
+                        2005
+                        : 
+                        0.278
+            </h3>
+            <h3
+                        className="data-line below-fifty">
+                        2006
+                        : 
+                        0.337
+            </h3>
+            <h3
+                        className="data-line below-fifty">
+                        2007
+                        : 
+                        0.395
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2008
+                        : 
+                        0.536
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2009
+                        : 
+                        0.598
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2010
+                        : 
+                        0.64
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2011
+                        : 
+                        0.672
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2012
+                        : 
+                        0.695
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2013
+                        : 
+                        0.703
+            </h3>
+            <h3
+                        className="data-line above-fifty">
+                        2014
+                        : 
+                        0.741
+            </h3>
+</div>,
+        ],
+        "className": "card [object Object]",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "COLORADO",
+            "className": "district-name",
+          },
+          "ref": null,
+          "rendered": "COLORADO",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="data-line below-fifty">
+                2004
+                : 
+                0.24
+</h3>,
+              <h3
+                className="data-line below-fifty">
+                2005
+                : 
+                0.278
+</h3>,
+              <h3
+                className="data-line below-fifty">
+                2006
+                : 
+                0.337
+</h3>,
+              <h3
+                className="data-line below-fifty">
+                2007
+                : 
+                0.395
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2008
+                : 
+                0.536
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2009
+                : 
+                0.598
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2010
+                : 
+                0.64
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2011
+                : 
+                0.672
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2012
+                : 
+                0.695
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2013
+                : 
+                0.703
+</h3>,
+              <h3
+                className="data-line above-fifty">
+                2014
+                : 
+                0.741
+</h3>,
+            ],
+            "className": "card-data",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "COLORADO 2004 -
+        0.24",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2004",
+                  ": ",
+                  0.24,
+                ],
+                "className": "data-line below-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2004",
+                ": ",
+                0.24,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2005 -
+        0.278",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2005",
+                  ": ",
+                  0.278,
+                ],
+                "className": "data-line below-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2005",
+                ": ",
+                0.278,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2006 -
+        0.337",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2006",
+                  ": ",
+                  0.337,
+                ],
+                "className": "data-line below-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2006",
+                ": ",
+                0.337,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2007 -
+        0.395",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2007",
+                  ": ",
+                  0.395,
+                ],
+                "className": "data-line below-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2007",
+                ": ",
+                0.395,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2008 -
+        0.536",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2008",
+                  ": ",
+                  0.536,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2008",
+                ": ",
+                0.536,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2009 -
+        0.598",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2009",
+                  ": ",
+                  0.598,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2009",
+                ": ",
+                0.598,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2010 -
+        0.64",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2010",
+                  ": ",
+                  0.64,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2010",
+                ": ",
+                0.64,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2011 -
+        0.672",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2011",
+                  ": ",
+                  0.672,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2011",
+                ": ",
+                0.672,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2012 -
+        0.695",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2012",
+                  ": ",
+                  0.695,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2012",
+                ": ",
+                0.695,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2013 -
+        0.703",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2013",
+                  ": ",
+                  0.703,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2013",
+                ": ",
+                0.703,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "COLORADO 2014 -
+        0.741",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2014",
+                  ": ",
+                  0.741,
+                ],
+                "className": "data-line above-fifty",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2014",
+                ": ",
+                0.741,
+              ],
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
