@@ -1,0 +1,218 @@
+exports[`CompareCard should create an instance of a card 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CompareCard
+    compareInfo={
+        Object {
+            "difference": Object {
+              "compare": 0.85,
+            },
+            "firstDistrict": Object {
+              "average": 0.8,
+              "title": "Colorado",
+            },
+            "secondDistrict": Object {
+              "average": 0.9,
+              "title": "Turing",
+            },
+          }
+    } />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="district-name">
+          Colorado
+</h2>,
+        <div
+          className="card-data">
+          0.8
+</div>,
+        <h1 />,
+        <div
+          className="card-data">
+          0.9
+</div>,
+        <h2
+          className="district-name">
+          Turing
+</h2>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Colorado",
+          "className": "district-name",
+        },
+        "ref": null,
+        "rendered": "Colorado",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": 0.8,
+          "className": "card-data",
+        },
+        "ref": null,
+        "rendered": 0.8,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": 0.9,
+          "className": "card-data",
+        },
+        "ref": null,
+        "rendered": 0.9,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Turing",
+          "className": "district-name",
+        },
+        "ref": null,
+        "rendered": "Turing",
+        "type": "h2",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="district-name">
+            Colorado
+</h2>,
+          <div
+            className="card-data">
+            0.8
+</div>,
+          <h1 />,
+          <div
+            className="card-data">
+            0.9
+</div>,
+          <h2
+            className="district-name">
+            Turing
+</h2>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Colorado",
+            "className": "district-name",
+          },
+          "ref": null,
+          "rendered": "Colorado",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0.8,
+            "className": "card-data",
+          },
+          "ref": null,
+          "rendered": 0.8,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0.9,
+            "className": "card-data",
+          },
+          "ref": null,
+          "rendered": 0.9,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Turing",
+            "className": "district-name",
+          },
+          "ref": null,
+          "rendered": "Turing",
+          "type": "h2",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
