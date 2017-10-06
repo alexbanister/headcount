@@ -1,4 +1,10 @@
 .compare-container {
+  background: #70879B;
+  background: -moz-linear-gradient(top, #70879B 0%, #526B7F 100%);
+  background: -webkit-linear-gradient(top, #70879B 0%, #526B7F 100%);
+  background: linear-gradient(to bottom, #70879B 0%, #526B7F 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+  margin-bottom: 1em;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -6,3 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: center; }
+  .compare-container h2:last-child {
+    justify-content: flex-end; }
+
+.compare-card {
+  margin: 2em 0; }
+  .compare-card .card-data {
+    align-items: flex-start; }
+
+.compare-card h2 {
+  background: #F3A746;
+  background: -moz-linear-gradient(top, #F3A746 0%, #EE7B2A 100%);
+  background: -webkit-linear-gradient(top, #F3A746 0%, #EE7B2A 100%);
+  background: linear-gradient(to bottom, #F3A746 0%, #EE7B2A 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); }

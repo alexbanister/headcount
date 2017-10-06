@@ -1,6 +1,8 @@
 @import "variables.scss";
 
 .compare-container {
+  @include linear-gradient($select-color-dark, $select-color);
+  margin-bottom: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,4 +11,18 @@
     align-items: center;
     justify-content: center;
   }
+  h2:last-child {
+    justify-content: flex-end;
+  }
+}
+
+.compare-card {
+  margin: 2em 0;
+  .card-data {
+    align-items: flex-start;
+  }
+}
+
+.compare-card h2 {
+  @include linear-gradient($highlight-dark, $highlight);
 }

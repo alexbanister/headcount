@@ -31,7 +31,7 @@ class Controls extends Component {
     });
     return (
       <div className='header'>
-        <h1>Welcome To Headcount 2.0</h1>
+        <h1>Headcount <strong>2.0</strong></h1>
         <select
           value={this.state.dataSet}
           onChange={this.handleChange.bind(this)}>
@@ -40,6 +40,7 @@ class Controls extends Component {
           {fileListDropdown}
         </select>
         <input
+          placeholder='Search Districts'
           value={this.state.searchValue}
           onChange={this.handleSearch.bind(this)} />
       </div>
