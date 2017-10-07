@@ -37,15 +37,25 @@
   padding: .5em;
   margin: 0; }
 
-.card-data {
+.card-body {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.card-data {
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 1em;
   font-size: .8em; }
 
 .data-line {
-  margin: 0; }
+  margin: 0;
+  width: 30%; }
 
 .above-fifty {
   color: #7FB068; }
