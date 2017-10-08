@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { VictoryChart, VictoryLine, VictoryAxis, VictoryArea } from 'victory';
 
 const Card = ( {district, setComparePosition, selected} ) => {
   const districtKeys = Object.keys(district.data);
@@ -18,7 +19,23 @@ const Card = ( {district, setComparePosition, selected} ) => {
     <div className={`card ${selected}`}
       onClick={() => setComparePosition(district.location)}>
       <h2 className="district-name">{district.location}</h2>
-      <div className="card-data">{yearlyData}</div>
+      <div className="card-body">
+        <div className="chart-area">
+          <VictoryChart>
+            <VictoryAxis
+              dependentAxis
+              tickFormat={(x) => (`${x * 100}%`)}
+            />
+            <VictoryLine
+              data={Object.values(district.data)}
+              style={{
+                data: {stroke: "#EE7B2A" }
+              }}
+            />
+          </VictoryChart>
+        </div>
+        <div className="card-data">{yearlyData}</div>
+      </div>
     </div>
   );
 };
