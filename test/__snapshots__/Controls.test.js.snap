@@ -24,7 +24,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          Welcome To Headcount 2.0
+          Headcount 
+          <strong>
+                    2.0
+          </strong>
 </h1>,
         <select
           onChange={[Function]}
@@ -37,7 +40,9 @@ ShallowWrapper {
                     dataSet="data" />
 </select>,
         <input
+          className="search-input"
           onChange={[Function]}
+          placeholder="Search Districts"
           value="" />,
       ],
       "className": "header",
@@ -49,10 +54,28 @@ ShallowWrapper {
         "key": null,
         "nodeType": "host",
         "props": Object {
-          "children": "Welcome To Headcount 2.0",
+          "children": Array [
+            "Headcount ",
+            <strong>
+              2.0
+</strong>,
+          ],
         },
         "ref": null,
-        "rendered": "Welcome To Headcount 2.0",
+        "rendered": Array [
+          "Headcount ",
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "2.0",
+            },
+            "ref": null,
+            "rendered": "2.0",
+            "type": "strong",
+          },
+        ],
         "type": "h1",
       },
       Object {
@@ -106,7 +129,9 @@ ShallowWrapper {
         "key": null,
         "nodeType": "host",
         "props": Object {
+          "className": "search-input",
           "onChange": [Function],
+          "placeholder": "Search Districts",
           "value": "",
         },
         "ref": null,
@@ -124,7 +149,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            Welcome To Headcount 2.0
+            Headcount 
+            <strong>
+                        2.0
+            </strong>
 </h1>,
           <select
             onChange={[Function]}
@@ -137,7 +165,9 @@ ShallowWrapper {
                         dataSet="data" />
 </select>,
           <input
+            className="search-input"
             onChange={[Function]}
+            placeholder="Search Districts"
             value="" />,
         ],
         "className": "header",
@@ -149,10 +179,28 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": "Welcome To Headcount 2.0",
+            "children": Array [
+              "Headcount ",
+              <strong>
+                2.0
+</strong>,
+            ],
           },
           "ref": null,
-          "rendered": "Welcome To Headcount 2.0",
+          "rendered": Array [
+            "Headcount ",
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2.0",
+              },
+              "ref": null,
+              "rendered": "2.0",
+              "type": "strong",
+            },
+          ],
           "type": "h1",
         },
         Object {
@@ -206,7 +254,9 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
+            "className": "search-input",
             "onChange": [Function],
+            "placeholder": "Search Districts",
             "value": "",
           },
           "ref": null,
