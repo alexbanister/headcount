@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import CompareCard from '../src/CompareCard';
 
@@ -9,11 +8,13 @@ describe('CompareCard', () => {
     const dummyCompare = {
       firstDistrict: {
         title: 'Colorado',
-        average: .8
+        average: .8,
+        districtData: { districtData: { 2007: 1 } }
       },
       secondDistrict: {
         title: 'Turing',
-        average: .9
+        average: .9,
+        districtData: { districtData: { 2007: 1 } }
       },
       difference: {
         compare: .85

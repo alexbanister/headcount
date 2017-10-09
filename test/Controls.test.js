@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow, mount } from 'enzyme';
 import Controls from '../src/Controls';
 import DistrictRepository from '../src/helper.js';

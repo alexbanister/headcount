@@ -1,6 +1,6 @@
 export default class DistrictRepository {
-  constructor(data) {
-    this.data = this.parseData(data);
+  constructor(districtData) {
+    this.districtData = this.parseData(districtData);
   }
 
   parseData(rawData) {
@@ -9,15 +9,15 @@ export default class DistrictRepository {
       if (!accu[loc]) {
         accu[loc] = {
           location: loc,
-          data: {}
+          districtData: {}
         };
       }
       let dataPoint = record.Data;
       if (isNaN(record.Data)) {
         dataPoint = 0;
       }
-      if (!accu[loc].data[record.TimeFrame]) {
-        accu[loc].data[record.TimeFrame] = this.rounded(dataPoint);
+      if (!accu[loc].districtData[record.TimeFrame]) {
+        accu[loc].districtData[record.TimeFrame] = this.rounded(dataPoint);
       }
       return accu;
     }, {});
@@ -27,13 +27,13 @@ export default class DistrictRepository {
     if (!searchInput){
       return undefined;
     }
-    const searchResult = Object.keys(this.data).find( (key) => {
+    const searchResult = Object.keys(this.districtData).find( (key) => {
       return key === searchInput.toUpperCase();
     });
     if (!searchResult){
       return undefined;
     }
-    return this.data[searchResult];
+    return this.districtData[searchResult];
   }
 
   rounded(num){
@@ -42,15 +42,15 @@ export default class DistrictRepository {
 
   findAllMatches(searchInput) {
     if (!searchInput) {
-      return Object.keys(this.data);
+      return Object.keys(this.districtData);
     }
-    return Object.keys(this.data).filter( (key) => {
+    return Object.keys(this.districtData).filter( (key) => {
       return key.includes(searchInput.toUpperCase());
     });
   }
 
   findAverage(district) {
-    const dataPoints = this.findByName(district).data;
+    const dataPoints = this.findByName(district).districtData;
     const years = Object.keys(dataPoints);
     const average = years.reduce( (accum, year) => {
       accum += dataPoints[year];

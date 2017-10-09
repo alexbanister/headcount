@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import DatasetButton from '../src/DatasetButton';
 import DistrictRepository from '../src/helper.js';
@@ -10,8 +9,8 @@ describe('DatasetButton', () => {
 
   it('should create an instance of a card container', () => {
     const wrapper = shallow(<DatasetButton
-      key={district.data.COLORADO.location}
-      dataSet={district.data.COLORADO.location}
+      key={district.districtData.COLORADO.location}
+      dataSet={district.districtData.COLORADO.location}
     />);
 
     expect(wrapper).toMatchSnapshot();

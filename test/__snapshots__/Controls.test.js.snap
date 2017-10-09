@@ -6,7 +6,7 @@ ShallowWrapper {
     changeData={[Function]}
     fileList={
         Array [
-            "data",
+            "districtData",
           ]
     }
     searchDistricts={[Function]} />,
@@ -37,7 +37,7 @@ ShallowWrapper {
                     Select a Dataset
           </option>
           <DatasetButton
-                    dataSet="data" />
+                    dataSet="districtData" />
 </select>,
         <input
           className="search-input"
@@ -90,7 +90,7 @@ ShallowWrapper {
 </option>,
             Array [
               <DatasetButton
-                dataSet="data" />,
+                dataSet="districtData" />,
             ],
           ],
           "onChange": [Function],
@@ -112,10 +112,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "data",
+            "key": "districtData",
             "nodeType": "function",
             "props": Object {
-              "dataSet": "data",
+              "dataSet": "districtData",
             },
             "ref": null,
             "rendered": null,
@@ -162,7 +162,7 @@ ShallowWrapper {
                         Select a Dataset
             </option>
             <DatasetButton
-                        dataSet="data" />
+                        dataSet="districtData" />
 </select>,
           <input
             className="search-input"
@@ -215,7 +215,7 @@ ShallowWrapper {
 </option>,
               Array [
                 <DatasetButton
-                  dataSet="data" />,
+                  dataSet="districtData" />,
               ],
             ],
             "onChange": [Function],
@@ -237,10 +237,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "data",
+              "key": "districtData",
               "nodeType": "function",
               "props": Object {
-                "dataSet": "data",
+                "dataSet": "districtData",
               },
               "ref": null,
               "rendered": null,
