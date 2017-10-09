@@ -40,6 +40,7 @@ class Controls extends Component {
           {fileListDropdown}
         </select>
         <input
+          className='search-input'
           placeholder='Search Districts'
           value={this.state.searchValue}
           onChange={this.handleSearch.bind(this)} />
