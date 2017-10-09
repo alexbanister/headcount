@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import DatasetButton from '../src/DatasetButton';
 import DistrictRepository from '../src/helper.js';

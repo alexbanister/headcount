@@ -1,7 +1,8 @@
 import React from 'react';
 import CompareCard from './CompareCard';
 import Card from './Card';
-// import DistrictRepository from './helper.js';
+import PropTypes from 'prop-types';
+
 
 const Compare = ( {compareInfo, removeCompare} ) => {
   let compareCard;
@@ -12,7 +13,7 @@ const Compare = ( {compareInfo, removeCompare} ) => {
       setComparePosition={() => removeCompare(1)}
       selected='compare-card left'
       district={compareInfo.firstDistrict.data}
-      key={`compare-${compareInfo.firstDistrict.title}`}/>
+      key={`compare-${compareInfo.firstDistrict.title}`}/>;
   }
   if (compareInfo.firstDistrict && compareInfo.secondDistrict) {
     compareCard = <CompareCard
@@ -22,7 +23,7 @@ const Compare = ( {compareInfo, removeCompare} ) => {
       setComparePosition={() => removeCompare(2)}
       selected='compare-card right'
       district={compareInfo.secondDistrict.data}
-      key={`compare-${compareInfo.secondDistrict.title}`}/>
+      key={`compare-${compareInfo.secondDistrict.title}`}/>;
   }
   return (
     <div className='compare-container'>
@@ -31,6 +32,11 @@ const Compare = ( {compareInfo, removeCompare} ) => {
       {secondCard}
     </div>
   );
+};
+
+Compare.propTypes = {
+  compareInfo: PropTypes.objectOf(PropTypes.object),
+  removeCompare: PropTypes.func
 };
 
 export default Compare;

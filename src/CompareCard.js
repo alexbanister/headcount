@@ -1,5 +1,6 @@
 import React from 'react';
-import { VictoryChart, VictoryLine, VictoryAxis, VictoryArea } from 'victory';
+import { VictoryChart, VictoryLine, VictoryAxis } from 'victory';
+import PropTypes from 'prop-types';
 
 const CompareCard = ( {compareInfo} ) => {
   return (
@@ -10,11 +11,11 @@ const CompareCard = ( {compareInfo} ) => {
       <VictoryChart>
         <VictoryAxis
           dependentAxis
-          tickFormat={(x) => (`${x * 100}%`)}
+          tickFormat={(xValue) => (`${xValue * 100}%`)}
         />
         <VictoryLine
           interpolation='monotoneX'
-          data={Object.values(compareInfo.firstDistrict.data.data)}
+          u={Object.values(compareInfo.firstDistrict.data.data)}
           style={{
             data: {stroke: "#EE7B2A" }
           }}
@@ -31,6 +32,10 @@ const CompareCard = ( {compareInfo} ) => {
       <h2 className="district-name">{compareInfo.secondDistrict.title}</h2>
     </div>
   );
+};
+
+CompareCard.propTypes = {
+  compareInfo: PropTypes.objectOf(PropTypes.object)
 };
 
 export default CompareCard;

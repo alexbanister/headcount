@@ -2,9 +2,9 @@ import React from 'react';
 import Card from './Card';
 import PropTypes from 'prop-types';
 
-// import DistrictRepository from './helper.js';
-
-const CardContainer = ( {districtData, districtList, setComparePosition, firstDistrict, secondDistrict} ) => {
+const CardContainer = (
+  {districtData, districtList,
+    setComparePosition, firstDistrict, secondDistrict} ) => {
   const allCards = districtList.map( (place) => {
     let selectedClass = '';
     if (place === firstDistrict || place === secondDistrict) {
@@ -25,8 +25,11 @@ const CardContainer = ( {districtData, districtList, setComparePosition, firstDi
 };
 
 CardContainer.propTypes = {
-  districtData: React.PropTypes.objectOf(PropTypes.object),
-  districtList: React.PropTypes.arrayOf(PropTypes.string)
+  districtData: PropTypes.objectOf(PropTypes.object),
+  districtList: PropTypes.arrayOf(PropTypes.string),
+  setComparePosition: PropTypes.func,
+  firstDistrict: PropTypes.string,
+  secondDistrict: PropTypes.string
 };
 
 

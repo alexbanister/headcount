@@ -50,9 +50,9 @@ class Controls extends Component {
 }
 
 Controls.propTypes = {
-  searchDistricts: React.PropTypes.func,
-  fileList: React.PropTypes.arrayOf(PropTypes.string),
-  changeData: React.PropTypes.func
+  searchDistricts: PropTypes.func,
+  fileList: PropTypes.arrayOf(PropTypes.string),
+  changeData: PropTypes.func
 };
 
 export default Controls;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { VictoryChart, VictoryLine, VictoryAxis, VictoryArea } from 'victory';
+import { VictoryChart, VictoryLine, VictoryAxis } from 'victory';
 
 const Card = ( {district, setComparePosition, selected} ) => {
   const districtKeys = Object.keys(district.data);
@@ -24,7 +24,7 @@ const Card = ( {district, setComparePosition, selected} ) => {
           <VictoryChart>
             <VictoryAxis
               dependentAxis
-              tickFormat={(x) => (`${x * 100}%`)}
+              tickFormat={(xValue) => (`${xValue * 100}%`)}
             />
             <VictoryLine
               interpolation='monotoneX'
@@ -42,10 +42,13 @@ const Card = ( {district, setComparePosition, selected} ) => {
 };
 
 Card.propTypes = {
-  district: React.PropTypes.oneOfType([
+  district: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object
-  ])
+  ]),
+  setComparePosition: PropTypes.func,
+  selected: PropTypes.string
+
 };
 
 export default Card;
