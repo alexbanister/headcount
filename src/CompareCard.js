@@ -15,7 +15,7 @@ const CompareCard = ( {compareInfo} ) => {
         />
         <VictoryLine
           interpolation='monotoneX'
-          u={Object.values(compareInfo.firstDistrict.districtData.districtData)}
+          data={Object.values(compareInfo.firstDistrict.districtData.districtData)}
           style={{
             data: {stroke: "#EE7B2A" }
           }}

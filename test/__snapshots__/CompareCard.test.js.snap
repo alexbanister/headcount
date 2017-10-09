@@ -2678,6 +2678,11 @@ ShallowWrapper {
                                         portalZIndex={99}
                                         responsive={true} />
                     }
+                    data={
+                              Array [
+                                        1,
+                                      ]
+                    }
                     dataComponent={<Curve />}
                     groupComponent={
                               <VictoryClipContainer
@@ -3098,11 +3103,6 @@ ShallowWrapper {
                                           "width": 450,
                                         },
                                       }
-                    }
-                    u={
-                              Array [
-                                        1,
-                                      ]
                     } />
           <VictoryLine
                     containerComponent={
@@ -4039,6 +4039,11 @@ ShallowWrapper {
                                           portalZIndex={99}
                                           responsive={true} />
               }
+              data={
+                            Array [
+                                          1,
+                                        ]
+              }
               dataComponent={<Curve />}
               groupComponent={
                             <VictoryClipContainer
@@ -4459,11 +4464,6 @@ ShallowWrapper {
                                             "width": 450,
                                           },
                                         }
-              }
-              u={
-                            Array [
-                                          1,
-                                        ]
               } />,
             <VictoryLine
               containerComponent={
@@ -7517,6 +7517,9 @@ ShallowWrapper {
                 portalComponent={<Portal />}
                 portalZIndex={99}
                 responsive={true} />,
+              "data": Array [
+                1,
+              ],
               "dataComponent": <Curve />,
               "groupComponent": <VictoryClipContainer
                 clipPathComponent={<ClipPath />} />,
@@ -7930,9 +7933,6 @@ ShallowWrapper {
                   "width": 450,
                 },
               },
-              "u": Array [
-                1,
-              ],
             },
             "ref": null,
             "rendered": null,
@@ -11043,6 +11043,11 @@ ShallowWrapper {
                                                 portalZIndex={99}
                                                 responsive={true} />
                         }
+                        data={
+                                    Array [
+                                                1,
+                                              ]
+                        }
                         dataComponent={<Curve />}
                         groupComponent={
                                     <VictoryClipContainer
@@ -11463,11 +11468,6 @@ ShallowWrapper {
                                                   "width": 450,
                                                 },
                                               }
-                        }
-                        u={
-                                    Array [
-                                                1,
-                                              ]
                         } />
             <VictoryLine
                         containerComponent={
@@ -12404,6 +12404,11 @@ ShallowWrapper {
                                                 portalZIndex={99}
                                                 responsive={true} />
                 }
+                data={
+                                Array [
+                                                1,
+                                              ]
+                }
                 dataComponent={<Curve />}
                 groupComponent={
                                 <VictoryClipContainer
@@ -12824,11 +12829,6 @@ ShallowWrapper {
                                                   "width": 450,
                                                 },
                                               }
-                }
-                u={
-                                Array [
-                                                1,
-                                              ]
                 } />,
               <VictoryLine
                 containerComponent={
@@ -15882,6 +15882,9 @@ ShallowWrapper {
                   portalComponent={<Portal />}
                   portalZIndex={99}
                   responsive={true} />,
+                "data": Array [
+                  1,
+                ],
                 "dataComponent": <Curve />,
                 "groupComponent": <VictoryClipContainer
                   clipPathComponent={<ClipPath />} />,
@@ -16295,9 +16298,6 @@ ShallowWrapper {
                     "width": 450,
                   },
                 },
-                "u": Array [
-                  1,
-                ],
               },
               "ref": null,
               "rendered": null,
