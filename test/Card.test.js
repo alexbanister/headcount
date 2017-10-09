@@ -12,8 +12,8 @@ describe('Card', () => {
     const wrapper = shallow(<Card
       selected={'COLORADO'}
       setComparePosition={mockFunc}
-      district={district.data.COLORADO}
-      key={district.data.COLORADO.location}
+      district={district.districtData.COLORADO}
+      key={district.districtData.COLORADO.location}
     />);
 
     expect(wrapper).toMatchSnapshot();

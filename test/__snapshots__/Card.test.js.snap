@@ -5,7 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Card
     district={
         Object {
-            "data": Object {
+            "districtData": Object {
               "2004": 0.24,
               "2005": 0.278,
               "2006": 0.337,

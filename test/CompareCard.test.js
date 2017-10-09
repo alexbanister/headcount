@@ -9,12 +9,12 @@ describe('CompareCard', () => {
       firstDistrict: {
         title: 'Colorado',
         average: .8,
-        data: { data: { 2007: 1 } }
+        districtData: { districtData: { 2007: 1 } }
       },
       secondDistrict: {
         title: 'Turing',
         average: .9,
-        data: { data: { 2007: 1 } }
+        districtData: { districtData: { 2007: 1 } }
       },
       difference: {
         compare: .85

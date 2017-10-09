@@ -103,7 +103,7 @@ class App extends Component {
             this.state.firstDistrict,
           average:
             this.state.districts.findAverage(this.state.firstDistrict),
-          data:
+          districtData:
             this.state.districts.findByName(this.state.firstDistrict)
         }
       };
@@ -115,7 +115,7 @@ class App extends Component {
             this.state.secondDistrict,
           average:
             this.state.districts.findAverage(this.state.secondDistrict),
-          data:
+          districtData:
             this.state.districts.findByName(this.state.secondDistrict)
         },
         difference:

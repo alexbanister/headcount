@@ -12,7 +12,7 @@ const Compare = ( {compareInfo, removeCompare} ) => {
     firstCard = <Card
       setComparePosition={() => removeCompare(1)}
       selected='compare-card left'
-      district={compareInfo.firstDistrict.data}
+      district={compareInfo.firstDistrict.districtData}
       key={`compare-${compareInfo.firstDistrict.title}`}/>;
   }
   if (compareInfo.firstDistrict && compareInfo.secondDistrict) {
@@ -22,7 +22,7 @@ const Compare = ( {compareInfo, removeCompare} ) => {
     secondCard = <Card
       setComparePosition={() => removeCompare(2)}
       selected='compare-card right'
-      district={compareInfo.secondDistrict.data}
+      district={compareInfo.secondDistrict.districtData}
       key={`compare-${compareInfo.secondDistrict.title}`}/>;
   }
   return (

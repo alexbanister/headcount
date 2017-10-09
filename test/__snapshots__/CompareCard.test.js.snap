@@ -10,8 +10,8 @@ ShallowWrapper {
             },
             "firstDistrict": Object {
               "average": 0.8,
-              "data": Object {
-                "data": Object {
+              "districtData": Object {
+                "districtData": Object {
                   "2007": 1,
                 },
               },
@@ -19,8 +19,8 @@ ShallowWrapper {
             },
             "secondDistrict": Object {
               "average": 0.9,
-              "data": Object {
-                "data": Object {
+              "districtData": Object {
+                "districtData": Object {
                   "2007": 1,
                 },
               },
