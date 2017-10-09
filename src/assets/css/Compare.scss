@@ -23,6 +23,10 @@
   }
 }
 
-.compare-card h2 {
+.left h2 {
   @include linear-gradient($highlight-dark, $highlight);
+}
+
+.right h2 {
+  @include linear-gradient($select-color-bright-shadow, $select-color-bright);
 }

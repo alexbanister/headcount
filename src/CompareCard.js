@@ -13,12 +13,14 @@ const CompareCard = ( {compareInfo} ) => {
           tickFormat={(x) => (`${x * 100}%`)}
         />
         <VictoryLine
+          interpolation='monotoneX'
           data={Object.values(compareInfo.firstDistrict.data.data)}
           style={{
             data: {stroke: "#EE7B2A" }
           }}
         />
         <VictoryLine
+          interpolation='monotoneX'
           data={Object.values(compareInfo.secondDistrict.data.data)}
           style={{
             data: {stroke: "#349BF5" }

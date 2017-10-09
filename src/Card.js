@@ -27,9 +27,10 @@ const Card = ( {district, setComparePosition, selected} ) => {
               tickFormat={(x) => (`${x * 100}%`)}
             />
             <VictoryLine
+              interpolation='monotoneX'
               data={Object.values(district.data)}
               style={{
-                data: {stroke: "#EE7B2A" }
+                data: {stroke: "#EE7B2A", strokeWidth: 5 }
               }}
             />
           </VictoryChart>
