@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import DatasetButton from '../src/DatasetButton';
-import DistrictRepository from '../src/helper.js';
+import DatasetButton from '../DatasetButton';
+import DistrictRepository from '../helper.js';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 
 describe('DatasetButton', () => {

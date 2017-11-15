@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Compare from '../src/Compare';
+import Compare from '../Compare';
 
 describe('Compare', () => {
 
