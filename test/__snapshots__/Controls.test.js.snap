@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Controls should create an instance of a card container 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -5,11 +7,12 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Controls
     changeData={[Function]}
     fileList={
-        Array [
-            "districtData",
-          ]
+      Array [
+        "districtData",
+      ]
     }
-    searchDistricts={[Function]} />,
+    searchDistricts={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -26,24 +29,28 @@ ShallowWrapper {
         <h1>
           Headcount 
           <strong>
-                    2.0
+            2.0
           </strong>
-</h1>,
+        </h1>,
         <select
           onChange={[Function]}
-          value="">
+          value=""
+        >
           <option
-                    value="">
-                    Select a Dataset
+            value=""
+          >
+            Select a Dataset
           </option>
           <DatasetButton
-                    dataSet="districtData" />
-</select>,
+            dataSet="districtData"
+          />
+        </select>,
         <input
           className="search-input"
           onChange={[Function]}
           placeholder="Search Districts"
-          value="" />,
+          value=""
+        />,
       ],
       "className": "header",
     },
@@ -58,7 +65,7 @@ ShallowWrapper {
             "Headcount ",
             <strong>
               2.0
-</strong>,
+            </strong>,
           ],
         },
         "ref": null,
@@ -85,12 +92,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value="">
+              value=""
+            >
               Select a Dataset
-</option>,
+            </option>,
             Array [
               <DatasetButton
-                dataSet="districtData" />,
+                dataSet="districtData"
+              />,
             ],
           ],
           "onChange": [Function],
@@ -151,24 +160,28 @@ ShallowWrapper {
           <h1>
             Headcount 
             <strong>
-                        2.0
+              2.0
             </strong>
-</h1>,
+          </h1>,
           <select
             onChange={[Function]}
-            value="">
+            value=""
+          >
             <option
-                        value="">
-                        Select a Dataset
+              value=""
+            >
+              Select a Dataset
             </option>
             <DatasetButton
-                        dataSet="districtData" />
-</select>,
+              dataSet="districtData"
+            />
+          </select>,
           <input
             className="search-input"
             onChange={[Function]}
             placeholder="Search Districts"
-            value="" />,
+            value=""
+          />,
         ],
         "className": "header",
       },
@@ -183,7 +196,7 @@ ShallowWrapper {
               "Headcount ",
               <strong>
                 2.0
-</strong>,
+              </strong>,
             ],
           },
           "ref": null,
@@ -210,12 +223,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value="">
+                value=""
+              >
                 Select a Dataset
-</option>,
+              </option>,
               Array [
                 <DatasetButton
-                  dataSet="districtData" />,
+                  dataSet="districtData"
+                />,
               ],
             ],
             "onChange": [Function],

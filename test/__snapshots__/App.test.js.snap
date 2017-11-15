@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`User intergration test Should load a dataSet by default to state 1`] = `
 DistrictRepository {
   "districtData": Object {
