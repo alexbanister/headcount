@@ -1,9 +1,12 @@
-exports[`DatasetButton should create an instance of a card container 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compare should create an instance of a compare container 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <DatasetButton
-    dataSet="COLORADO" />,
+  Symbol(enzyme.__unrendered__): <Compare
+    compareInfo={Object {}}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,12 +19,20 @@ ShallowWrapper {
     "key": null,
     "nodeType": "host",
     "props": Object {
-      "children": "COLORADO",
-      "value": "COLORADO",
+      "children": Array [
+        undefined,
+        undefined,
+        undefined,
+      ],
+      "className": "compare-container",
     },
     "ref": null,
-    "rendered": "COLORADO",
-    "type": "option",
+    "rendered": Array [
+      undefined,
+      undefined,
+      undefined,
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -29,12 +40,20 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
-        "children": "COLORADO",
-        "value": "COLORADO",
+        "children": Array [
+          undefined,
+          undefined,
+          undefined,
+        ],
+        "className": "compare-container",
       },
       "ref": null,
-      "rendered": "COLORADO",
-      "type": "option",
+      "rendered": Array [
+        undefined,
+        undefined,
+        undefined,
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

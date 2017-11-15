@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`CardContainer should create an instance of a card container 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -7,7 +9,8 @@ ShallowWrapper {
     districtList={Array []}
     firstDistrict="COLORADO"
     secondDistrict="ACADEMY 20"
-    setComparePosition={[Function]} />,
+    setComparePosition={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

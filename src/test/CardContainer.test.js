@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CardContainer from '../src/CardContainer';
-import DistrictRepository from '../src/helper.js';
+import CardContainer from '../CardContainer';
+import DistrictRepository from '../helper.js';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 
 describe('CardContainer', () => {

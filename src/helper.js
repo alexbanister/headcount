@@ -1,4 +1,4 @@
-export default class DistrictRepository {
+class DistrictRepository {
   constructor(districtData) {
     this.districtData = this.parseData(districtData);
   }
@@ -75,3 +75,4 @@ export default class DistrictRepository {
     };
   }
 }
+export default DistrictRepository;

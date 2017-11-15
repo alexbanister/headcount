@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Controls from '../src/Controls';
-import DistrictRepository from '../src/helper.js';
+import Controls from '../Controls';
+import DistrictRepository from '../helper.js';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 
 describe('Controls', () => {
